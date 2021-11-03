@@ -1,47 +1,0 @@
-setNumberOfStudents
-getId
-setId
-setCourses
-setModules
-getName
-getNumberOfStudents
-!# Students Before Creating: 2005
-# Students After: 2006
-	
-addCourse
-
-
-addModule
-setUsername
-getUsername
-getCourses
-getAge
-getDob
-getModules
-setName
-setAge
-setDob
-getListOfModules
-setAcademicStartDate
-addStudent
-getName
-getAcademicStartDate
-getAcademicEndDate
-
-addModule
-setListOfStudents
-setAcademicEndDate
-setListOfModules
-getListOfStudents
- setName
-"!getCoursesAssociated
-"#getId
-"$setId
-"%addStudent
-"&getName
-"'
-addCourse
-"(setListOfStudents
-")getListOfStudents
-"*setName
-"+setCoursesAssociated

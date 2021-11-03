@@ -1,5 +1,3 @@
-softwareengineering1a/Main.java
- softwareengineering1a.Main
 softwareengineering1a/Student.java
  softwareengineering1a.Student
 softwareengineering1a/Module.java
