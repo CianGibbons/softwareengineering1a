@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="softwareengineering1a.StudentTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2021-11-03T17:45:27" hostname="Cians-MBP.station" time="0.104">
+  <properties/>
+  <testcase name="testSetNumberOfStudents" classname="softwareengineering1a.StudentTest" time="0.013"/>
+  <testcase name="testGetId" classname="softwareengineering1a.StudentTest" time="0.059"/>
+  <testcase name="testSetId" classname="softwareengineering1a.StudentTest" time="0.001"/>
+  <testcase name="testSetCourses" classname="softwareengineering1a.StudentTest" time="0.002"/>
+  <testcase name="testSetModules" classname="softwareengineering1a.StudentTest" time="0.001"/>
+  <testcase name="testGetName" classname="softwareengineering1a.StudentTest" time="0.0"/>
+  <testcase name="testGetNumberOfStudents" classname="softwareengineering1a.StudentTest" time="0.004"/>
+  <testcase name="testAddCourse" classname="softwareengineering1a.StudentTest" time="0.001"/>
+  <testcase name="testAddModule" classname="softwareengineering1a.StudentTest" time="0.0"/>
+  <testcase name="testSetUsername" classname="softwareengineering1a.StudentTest" time="0.001"/>
+  <testcase name="testGetUsername" classname="softwareengineering1a.StudentTest" time="0.014"/>
+  <testcase name="testGetCourses" classname="softwareengineering1a.StudentTest" time="0.0"/>
+  <testcase name="testGetAge" classname="softwareengineering1a.StudentTest" time="0.001"/>
+  <testcase name="testGetDob" classname="softwareengineering1a.StudentTest" time="0.0"/>
+  <testcase name="testGetModules" classname="softwareengineering1a.StudentTest" time="0.001"/>
+  <testcase name="testSetName" classname="softwareengineering1a.StudentTest" time="0.002"/>
+  <testcase name="testSetAge" classname="softwareengineering1a.StudentTest" time="0.0"/>
+  <testcase name="testSetDob" classname="softwareengineering1a.StudentTest" time="0.001"/>
+  <system-out><![CDATA[setNumberOfStudents
+getId
+setId
+setCourses
+setModules
+getName
+getNumberOfStudents
+# Students Before Creating: 2005
+# Students After: 2006
+addCourse
+addModule
+setUsername
+getUsername
+getCourses
+getAge
+getDob
+getModules
+setName
+setAge
+setDob
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

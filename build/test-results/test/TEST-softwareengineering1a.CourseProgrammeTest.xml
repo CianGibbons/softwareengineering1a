@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="softwareengineering1a.CourseProgrammeTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2021-11-03T17:45:27" hostname="Cians-MBP.station" time="0.008">
+  <properties/>
+  <testcase name="testGetListOfModules" classname="softwareengineering1a.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testSetAcademicStartDate" classname="softwareengineering1a.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testAddStudent" classname="softwareengineering1a.CourseProgrammeTest" time="0.0"/>
+  <testcase name="testGetName" classname="softwareengineering1a.CourseProgrammeTest" time="0.0"/>
+  <testcase name="testGetAcademicStartDate" classname="softwareengineering1a.CourseProgrammeTest" time="0.0"/>
+  <testcase name="testGetAcademicEndDate" classname="softwareengineering1a.CourseProgrammeTest" time="0.0"/>
+  <testcase name="testAddModule" classname="softwareengineering1a.CourseProgrammeTest" time="0.0"/>
+  <testcase name="testSetListOfStudents" classname="softwareengineering1a.CourseProgrammeTest" time="0.0"/>
+  <testcase name="testSetAcademicEndDate" classname="softwareengineering1a.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testSetListOfModules" classname="softwareengineering1a.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testGetListOfStudents" classname="softwareengineering1a.CourseProgrammeTest" time="0.0"/>
+  <testcase name="testSetName" classname="softwareengineering1a.CourseProgrammeTest" time="0.0"/>
+  <system-out><![CDATA[getListOfModules
+setAcademicStartDate
+addStudent
+getName
+getAcademicStartDate
+getAcademicEndDate
+addModule
+setListOfStudents
+setAcademicEndDate
+setListOfModules
+getListOfStudents
+setName
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
