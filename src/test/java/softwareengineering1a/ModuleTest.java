@@ -43,7 +43,10 @@ public class ModuleTest {
      */
     @Test
     public void testGetName() {
-        System.out.println("getName");
+        System.out.println("Running JUnit Test for getName()");
+        //Create an instance of Module using a specific name
+        //use the getName() method to get the result of the method
+        //ensure that the result yielded from the getName() method is the same as the original name of the module.
         String nameOfModule = "Software Engineering 3";
         String idOfModule = "CT417";
         Module instance = new Module( nameOfModule, idOfModule );
@@ -57,7 +60,10 @@ public class ModuleTest {
      */
     @Test
     public void testGetId() {
-        System.out.println("getId");
+        System.out.println("Running JUnit Test for getId()");
+        //Create a Module using a specific ID
+        //Use the getId() method to get the actual result of the method
+        //Ensure that the actual result of the method is equal to the original Module ID
         String nameOfModule = "Software Engineering 3";
         String idOfModule = "CT417";
         Module instance = new Module( nameOfModule, idOfModule );
@@ -71,7 +77,10 @@ public class ModuleTest {
      */
     @Test
     public void testGetListOfStudents() {
-        System.out.println("getListOfStudents");
+        System.out.println("Running JUnit Test for getListOfStudents()");
+        //Create an instance of Module using the constructor that allows you to pass in a list of students
+        //since we have the list that was passed into the constructor we can use this to compare with the result of getListOfStudents()
+        
         ArrayList<Student> listOfStudents = new ArrayList<>();
         //{"Cian Gibbons","Jamie Larkin","Joe Ribbon"}
         listOfStudents.add(new Student("Cian Gibbons", new DateTime( 2000, 1, 21, 0, 0, 0 )));
@@ -82,6 +91,7 @@ public class ModuleTest {
         Module instance = new Module( listOfStudents, nameOfModule, idOfModule );
         ArrayList<Student> expResult = listOfStudents;
         ArrayList<Student> result = instance.getListOfStudents();
+        //Ensure both lists of students are equal
         assertEquals(expResult, result);
         
     }
@@ -91,7 +101,9 @@ public class ModuleTest {
      */
     @Test
     public void testGetCoursesAssociated() {
-        System.out.println("getCoursesAssociated");
+        System.out.println("Running JUnit Test for getCoursesAssociated()");
+        //Create an instance of Module using the constructor that allows you to pass in a list of courses associated
+        //since we have the list that was passed into the constructor we can use this to compare with the result of getCoursesAssociated()
         
         //Create Joda DateTime objects with ints for year, month, day, hour, minutes, seconds
         DateTime academicStartDate = new DateTime( 2021, 9, 6, 9, 0, 0);
@@ -103,6 +115,7 @@ public class ModuleTest {
         Module instance = new Module( nameOfModule, idOfModule, listOfCoursesAssociated );
         ArrayList<CourseProgramme> expResult = listOfCoursesAssociated;
         ArrayList<CourseProgramme> result = instance.getCoursesAssociated();
+        //Ensure both lists of courses are equal
         assertEquals(expResult, result);
         
     }
@@ -112,7 +125,10 @@ public class ModuleTest {
      */
     @Test
     public void testSetName() {
-        System.out.println("setName");
+        System.out.println("Running JUnit Test for setName()");
+        //Create an instance of Module with a specific name
+        //Overwrite the name of the Module with a new Name using the setName() method
+        //Get the Name of the instance of the Module using getName() and ensure it is equal to the new Name
         String newName = "Computer Software Engineering 3";
         String nameOfModule = "Software Engineering 3";
         String idOfModule = "CT417";
@@ -121,6 +137,7 @@ public class ModuleTest {
         
         String expResult = newName;
         String result = instance.getName();
+        //ensure results are equal
         assertEquals(expResult, result);
     }
 
@@ -129,7 +146,10 @@ public class ModuleTest {
      */
     @Test
     public void testSetId() {
-        System.out.println("setId");
+        System.out.println("Running JUnit Test for setId()");
+        //Create an instance of Module with a specific ID
+        //Overwrite the ID of the Module with a new ID using the setId() method
+        //Get the ID of the instance of the Module using getId() and ensure it is equal to the new ID
         String newIdOfModule = "CT418";
         String nameOfModule = "Software Engineering 3";
         String idOfModule = "CT417";
@@ -138,6 +158,7 @@ public class ModuleTest {
         
         String expResult = newIdOfModule;
         String result = instance.getId();
+        //ensure results are equal
         assertEquals(expResult, result);
     }
 
@@ -146,7 +167,10 @@ public class ModuleTest {
      */
     @Test
     public void testSetListOfStudents() {
-        System.out.println("setListOfStudents");
+        System.out.println("Running JUnit Test for setListOfStudents");
+        //Create an instance of Module
+        //Set the Module's list of the Students using the setListOfStudents() method
+        //Ensure that getListOfStudents returns this same list
         ArrayList<Student> listOfStudents = new ArrayList<>();
         //{"Cian Gibbons","Jamie Larkin","Joe Ribbon"}
         listOfStudents.add(new Student("Cian Gibbons", new DateTime( 2000, 1, 21, 0, 0, 0 )));
@@ -159,6 +183,7 @@ public class ModuleTest {
         
         ArrayList<Student> expResult = listOfStudents;
         ArrayList<Student> result = instance.getListOfStudents();
+        //ensure that both lists are equal
         assertEquals(expResult, result);
         
     }
@@ -168,7 +193,11 @@ public class ModuleTest {
      */
     @Test
     public void testSetCoursesAssociated() {
-        System.out.println("setCoursesAssociated");
+        System.out.println("Running JUnit Test for setCoursesAssociated()");
+        //Create an instance of Module
+        //Set the Module's list of the Courses Associated using the setCoursesAssociated() method
+        //Ensure that getCoursesAssociated() returns this same list
+        
         //Create Joda DateTime objects with ints for year, month, day, hour, minutes, seconds
         DateTime academicStartDate = new DateTime( 2021, 9, 6, 9, 0, 0);
         DateTime academicEndDate = new DateTime( 2022, 5, 31, 6, 0, 0);
@@ -181,6 +210,7 @@ public class ModuleTest {
         
         ArrayList<CourseProgramme> expResult = listOfCoursesAssociated;
         ArrayList<CourseProgramme> result = instance.getCoursesAssociated();
+        //ensure both lists are the same
         assertEquals(expResult, result);
     }
 
@@ -189,14 +219,16 @@ public class ModuleTest {
      */
     @Test
     public void testAddStudent() {
-        System.out.println("addStudent");
+        System.out.println("Running JUnit Test for addStudent");
+        //Create an instance of Module
+        //Add a Student to the Module's list of Students
         Student student = new Student("Cian Gibbons", new DateTime( 2000, 1, 21, 0, 0, 0 ));
         String nameOfModule = "Software Engineering 3";
         String idOfModule = "CT417";
         Module instance = new Module( nameOfModule, idOfModule );
         instance.addStudent(student);
         
-        
+        //Ensure that the Module contains the student on its list of students
         assertTrue(instance.getListOfStudents().contains(student));
     }
 
@@ -205,7 +237,10 @@ public class ModuleTest {
      */
     @Test
     public void testAddCourse() {
-        System.out.println("addCourse");
+        System.out.println("Running JUnit Test for addCourse");
+        //Create an instance of Module
+        //Add a Course to the Module's list of Courses
+        
         //Create Joda DateTime objects with ints for year, month, day, hour, minutes, seconds
         DateTime academicStartDate = new DateTime( 2021, 9, 6, 9, 0, 0);
         DateTime academicEndDate = new DateTime( 2022, 5, 31, 6, 0, 0);
@@ -214,6 +249,7 @@ public class ModuleTest {
         String idOfModule = "CT417";
         Module instance = new Module( nameOfModule, idOfModule );
         instance.addCourse(course);
+        //Ensure that the Module contains the course on its list of courses
         assertTrue(instance.getCoursesAssociated().contains(course));
     }
        

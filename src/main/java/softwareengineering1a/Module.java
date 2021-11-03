@@ -18,7 +18,8 @@ public class Module {
     private ArrayList<CourseProgramme> listOfCoursesAssociated = new ArrayList<>();
 
     //Constructors
-    public Module(String name, String id) {
+   // Note: Multiple Constructors not required but were made in order to adequately test all methods in the JUnit Tests
+     public Module(String name, String id) {
         this.name = name;
         this.id = id;
     }
@@ -73,7 +74,9 @@ public class Module {
     
     //Update Lists
     public void addStudent(Student student){
+        //Add student to the list of students signed up to this module
         this.listOfStudents.add( student );
+        // if the student doesnt contain this module on its list of moduels then add this module to the student's list of modules
         if(!student.getModules().contains(this)){
             student.addModule(this);
         }
@@ -81,7 +84,9 @@ public class Module {
     }
     
     public final void addCourse(CourseProgramme course){
+        // Add course to the list of courses associated with this module
         this.listOfCoursesAssociated.add( course );
+        // if the course doesnt contain this module on its list of modules then add this module to the course's list of modules
         if(!course.getListOfModules().contains(this)){
             course.addModule(this);
         }

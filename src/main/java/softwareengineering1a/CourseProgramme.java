@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package softwareengineering1a;
-import org.joda.time.DateTime;
+import org.joda.time.DateTime; // import the Joda Time Package
 import java.util.ArrayList; // import the ArrayList class
 /**
  *
@@ -19,6 +19,7 @@ public class CourseProgramme {
     private DateTime academicEndDate;
 
     //Constructors
+    // Note: Multiple Constructors not required but were made in order to adequately test all methods in the JUnit Tests
     public CourseProgramme(String name, DateTime academicStartDate, DateTime academicEndDate) {
         this.name = name;
         this.academicStartDate = academicStartDate;
@@ -83,14 +84,18 @@ public class CourseProgramme {
     
     //Update Lists
     public void addStudent(Student student){
+        // Add student to the List of Students in this Course Programme
         this.listOfStudents.add( student );
+        // If the Student doesnt have this course on its list of courses add this course to its list of courses
         if(!student.getCourses().contains(this)){
             student.addCourse(this);
         }
     }
     
     public void addModule(Module module){
+        // Add Module to the List of Modules in this Course
         this.listOfModules.add( module );
+        // If the Modules doesn't have this course on its list of courses associated, then add this course to the list of the modules courses associated
         if(!module.getCoursesAssociated().contains(this)){
             module.addCourse(this);
         }

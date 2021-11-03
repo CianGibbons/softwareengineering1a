@@ -26,6 +26,7 @@ public class Student {
     private ArrayList<Module> listOfModules = new ArrayList<>();
 
     //Constructor
+    // Note: Multiple Constructors not required but were made in order to adequately test all methods in the JUnit Tests
     public Student(String name, DateTime dob) {
         this.name = name;
         this.dob = dob;
@@ -62,6 +63,7 @@ public class Student {
     }
     
     public String getUsername() {
+        // Usernames are constructed by concatonating a students name and age.
         if( this.username == null ){
             this.setUsername( this.getName() + this.getAge());
         }
@@ -69,7 +71,9 @@ public class Student {
     }
 
     public int getAge() {
+        // if the age of the student is not yet set, i.e. is equal to -1
         if( this.age == -1 ){
+            //Calculating the the Period of time in Years between the Students Date of Birth and the date now
             DateTime now = DateTime.now();
             this.age = new Period(this.getDob(), now).getYears();
         }
@@ -129,14 +133,18 @@ public class Student {
 
     //Update Lists
     public void addModule(Module module){
+        // Add the module to the Students list of Modules
         this.listOfModules.add( module );
+        // If the Student hasn't yet been added to the Modules list of students then add the student to the modules list of students
         if(!module.getListOfStudents().contains(this)){
             module.addStudent(this);
         }
     }
     
     public void addCourse(CourseProgramme course){
+        // Add the course to the students list of courses
         this.listOfCourses.add( course );
+        // if the students has not been added to the courses list of students then add the student to the courses list of students
         if(!course.getListOfStudents().contains(this)){
             course.addStudent(this);
         }
