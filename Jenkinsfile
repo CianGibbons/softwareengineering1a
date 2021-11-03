@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout Codebase') {
             steps {
                 cleanWs()
-                checkout scm: [$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[credentialsId: 'github-ssh-key', url: 'git@github.com:CianGibbons/CT417-Assignment1-StudentRegistrationSystem.git']]]
+                checkout scm: [$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[credentialsId: 'github-ssh-key', url: 'git@github.com:CianGibbons/softwareengineering1a.git']]]
             }
         }
         stage('Clean and Build') {
